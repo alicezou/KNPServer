@@ -74,7 +74,7 @@ virtual environment.
 
 
 ### Transmit Files between Server and PC with SFTP
-You can transmit files between our server and you pc with the following steps:
+You can transmit files between our server and your pc with the following steps:
 1. Open a terminal.
 2. Enter the folder on your PC where you want to transmit files with the server.
 3. `sftp <uniquename>@lasagna.eecs.umich.edu`. The password is just your password for other UM services
