@@ -29,7 +29,7 @@ Your current working directory is `/home/<uniquename>`.
 1. Activate python virtual environment, you can use `source /home/alicezou/env/bin/activate`.
 1. ~~`cd /home/alicezou/Server_Deploy/KNP`~~
 1. `cd /home/alicezou/KNPServer/KNP`
-1. (If you want to run test_variable_sqlite.py, I recommend to first `cd /home/alicezou/KNPServer/KNP`, and remove your local database)
+1. (If you want to run test_variable_sqlite.py, I recommend to `rm KGPLData.db` on server, and remove your local database)
 1. `export FLASK_APP=KNPS_sync_server.py` 
 1. `flask run --host=0.0.0.0 --port 8000` (Or whatever port you want)
 1. Make sure in kgpl.py (You should adjust the kgpl.py where you run programAB.py or other test programs.
