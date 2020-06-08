@@ -1,9 +1,9 @@
 # KNP Server
 _created by Jiayun Zou on 5.28.2020_ 
 
-_version 0.0_
+_version 0.2_
 
-_last update: 5.28.2020_
+_last update: 6.8.2020_
 
 ## Access Server
 **You need to connect to a UM VPN to access the server.**
@@ -28,9 +28,11 @@ Your current working directory is `/home/<uniquename>`.
 1. Access the server
 1. Activate python virtual environment, you can use `source /home/alicezou/env/bin/activate`.
 1. ~~`cd /home/alicezou/Server_Deploy/KNP`~~
-1. `cd /home/alicezou/KNPserver/KNP`
+1. ~~`cd /home/alicezou/KNPserver/KNP`~~
+1. `cd /home/alicezou/Server_sqlite/KNP/`
 1. (If you want to run test_variable_sqlite.py, I recommend to `rm KGPLData.db` on server, and remove your local database)
-1. `export FLASK_APP=KNPS_sync_server.py` 
+1. ~~`export FLASK_APP=KNPS_sync_server.py`~~
+1. `export FLASK_APP=server/KNPS_sync_server.py`
 1. `flask run --host=0.0.0.0 --port 8000` (Or whatever port you want)
 1. Make sure in kgpl.py (You should adjust the kgpl.py where you run programAB.py or other test programs.
 If you run it locally, you should adjust it locally.), you have 
