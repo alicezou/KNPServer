@@ -1,9 +1,9 @@
 # KNP Server
 _created by Jiayun Zou on 5.28.2020_ 
 
-_version 0.2_
+_version 1.0_
 
-_last update: 6.8.2020_
+_last update: 10.7.2020_
 
 ## Access Server
 **You need to connect to a UM VPN to access the server.**
@@ -23,30 +23,18 @@ The password is just your password for other UM services.
 Now you have accessed the server.
 Your current working directory is `/home/<uniquename>`.
 
+![image](ser.png)
+
 ## Deploy Project
 ### How to use server
 1. Access the server
 1. Activate python virtual environment, you can use `source /home/alicezou/env/bin/activate`.
-1. ~~`cd /home/alicezou/Server_Deploy/KNP`~~
-1. ~~`cd /home/alicezou/KNPserver/KNP`~~
-1. `cd /home/alicezou/Server_sqlite/KNP/`
+1. `cd /home/alicezou/KNP/`
 1. (If you want to run test_variable_sqlite.py, I recommend to `rm KGPLData.db` on server, and remove your local database)
-1. ~~`export FLASK_APP=KNPS_sync_server.py`~~
-1. `export FLASK_APP=server/KNPS_sync_server.py`
-1. `flask run --host=0.0.0.0 --port 8000` (Or whatever port you want)
-1. Make sure in kgpl.py (You should adjust the kgpl.py where you run programAB.py or other test programs.
-If you run it locally, you should adjust it locally.), you have 
-`store = KNPSStore.KNPSStore('http://lasagna.eecs.umich.edu:8000')` 
-(If you do not use port 8000, you should change it accordingly.)
+1. `export FLASK_APP=server.py`
+1. `flask run --host=0.0.0.0 --port 5000`
 
 
-![image](server.jpg)
-![image](kgpl.png)
-
-You can open many servers at the same time on different ports. 
-
-<sub><sup>_For instance, you can test parent server functionality by taking advantage of 
-different ports._</sup></sub>
 
 ### How to update sync server
 - Use sftp. (See below)
