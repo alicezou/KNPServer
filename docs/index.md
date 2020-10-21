@@ -30,10 +30,8 @@ Your current working directory is `/home/<uniquename>`.
 1. Access the server
 1. Activate python virtual environment, you can use `source /home/alicezou/env/bin/activate`.
 1. `cd /home/alicezou/KNP/`
-1. (If you want to run test_variable_sqlite.py, I recommend to `rm KGPLData.db` on server, and remove your local database)
 1. `export FLASK_APP=server.py`
 1. `flask run --host=0.0.0.0 --port 5000`
-
 
 
 ### How to update sync server
