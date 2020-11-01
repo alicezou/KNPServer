@@ -1,7 +1,7 @@
 # KNP Server
 _created by Jiayun Zou on 5.28.2020_ 
 
-_version 1.1_
+_version 2.0_
 
 _last update: 11.1.2020_
 
@@ -23,8 +23,6 @@ The password is just your password for other UM services.
 Now you have accessed the server.
 Your current working directory is `/home/<uniquename>`.
 
-![image](ser2.png)
-
 ## Deploy Project
 ### How to use server
 1. Access the server
@@ -42,6 +40,10 @@ Your current working directory is `/home/<uniquename>`.
     1. Reset it with `./delete_all.sh`
 
 ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Remember to close the port after you use it! ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+
+![image](ser2.png)
+
+![image](ser3.png)
 
 
 ### How to update sync server
