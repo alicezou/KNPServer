@@ -1,9 +1,9 @@
 # KNP Server
 _created by Jiayun Zou on 5.28.2020_ 
 
-_version 1.0_
+_version 1.1_
 
-_last update: 10.7.2020_
+_last update: 11.1.2020_
 
 ## Access Server
 **You need to connect to a UM VPN to access the server.**
@@ -23,15 +23,25 @@ The password is just your password for other UM services.
 Now you have accessed the server.
 Your current working directory is `/home/<uniquename>`.
 
-![image](ser.png)
+![image](ser2.png)
 
 ## Deploy Project
 ### How to use server
 1. Access the server
 1. Activate python virtual environment, you can use `source /home/alicezou/env/bin/activate`.
-1. `cd /home/alicezou/KNP/`
-1. `export FLASK_APP=server.py`
-1. `flask run --host=0.0.0.0 --port 8000`
+1. Git clone the repo to your home directory. `git clone git@github.com:mikecafarella/KNP.git` Or using HTTPS `git clone https://github.com/mikecafarella/KNP.git`
+1. `cd /home/<uniquename>/KNP/server`
+    1. `export FLASK_APP=server.py`
+    1. `flask run --host=0.0.0.0 --port 8080` (Or any other port if you have adjust the parameters in server.py and kgpl.py accordingly.)
+    
+    Or
+     
+    1. Or use the Script `./start.sh`
+1. If you mess up the database, you can 
+    1. Stop the server with `ctrl + C`
+    1. Reset it with `./delete_all.sh`
+
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Remember to close the port after you use it! ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
 
 ### How to update sync server
